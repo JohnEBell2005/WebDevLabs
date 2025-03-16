@@ -1,0 +1,55 @@
+*
+{
+    font-family: "Roboto", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 100;
+    font-style: normal;
+    font-variation-settings: "wdth" 100;
+}
+p {
+    padding: 5px; margin: 5px;
+}
+#webname {
+    background-color: #92ad70;
+    color: darkgreen
+}
+nav a {
+    text-decoration: none;
+    color: #0047AB;
+    margin-right: 15px;
+}
+table {
+    width: fit-content;
+    border-collapse: collapse;
+    margin: 20px;
+}
+table, td {
+    padding: 8px;
+    border: 1px solid #ddd;
+    text-align: left;
+}
+tr:nth-child(even) {
+    background-color: #f2f2f2;
+  }
+table tr:first-child {
+    background-color: lightseagreen;
+    color: white;
+    text-align: center;
+}
+form * {
+    display: block;
+    margin: auto;
+    text-align: center;
+}
+form input[type="submit"] {
+    background-color: green;
+    border: none;
+    border-radius: 12px;
+    color: white;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+#comment {
+    width: 45%; /* Adjust the width as needed */
+    height: 90px; /* Adjust the height as needed */
+}
