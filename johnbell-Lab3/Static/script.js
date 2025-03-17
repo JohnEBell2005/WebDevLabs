@@ -23,3 +23,37 @@ if (C.length > z) {
 } else {
     console.log("good job!");
 }
+
+var L1 = ["Watermelon", "Pineapple", "Pear", "Banana"];
+var L2 = ["Apple", "Banana", "Kiwi", "Orange"];
+
+function findTheBanana(array) {
+    array.forEach(function(item) {
+        if (item === "Banana") {
+            alert("Found Banana!");
+        }
+    });
+}
+findTheBanana(L1);
+findTheBanana(L2);
+
+function greetingFunc() {
+    var d = new Date();
+    var h = d.getHours();
+    var E = document.getElementById("greeting");
+    var greetingMessage = "";
+
+    if (h < 12) {
+        greetingMessage = "Good morning";
+    } else if (h >= 12 && h < 18) {
+        greetingMessage = "Good afternoon";
+    } else if (h >= 18 && h < 20) {
+        greetingMessage = "Good evening";
+    }  else if ((h >= 20 && h < 24) || (h >= 0 && h < 5)) {
+        greetingMessage = "Good night";
+    }
+    E.innerHTML = `${greetingMessage}, I am John`;
+}
+if (window.location.href.includes("index.html")) {
+    greetingFunc();
+}
