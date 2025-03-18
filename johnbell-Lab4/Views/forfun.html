@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script defer src="../static/script.js"></script>
+    <link rel="stylesheet" href="../static/style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="John Bell">
+    <meta name="keywords" content="Carnegie Mellon University, Information Systems">
+    <meta name="description" content="John Bell professional website">
+    <title>John Bell</title>
+</head>
+<body style="font-family: Arial" onload()="addYear()">
+    <header>
+        <nav>
+            <ul>
+                <li><a href="../Index.html">Home Page</a></li>
+                <li><a href="./cv.html">Resume</a></li>
+                <li><a href="./contact.html">Get in Touch</a></li>
+                <li><a href="./forfun.html">Activities</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <h1 id="webname"> John Bell</h1>
+    <div class="main">
+        <h2>Things I love to do for fun</h2>
+        <button onclick="showList()">Click to see...</button>
+        <ul id="funList" style="display: none;">
+            <li>Thing 1</li>
+            <li>Thing 2</li>
+            <li>Thing 3</li>
+            <li>Thing 4</li>
+            <li>Thing 5</li>
+        </ul>
+    </div>
+    
+    <footer>
+        John Bell Inc. &copy;
+        <span id="copyYear"></span>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script defer src="./static/script.js"></script>
+    <link rel="stylesheet" href="static/style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="John Bell">
+    <meta name="keywords" content="Carnegie Mellon University, Information Systems">
+    <meta name="description" content="John Bell professional website">
+    <title>John Bell</title>
+</head>
+<body style="font-family: Arial" onload()="addYear()">
+    <header style="color: green; background:lightseagreen">
+        <nav>
+            <ul>
+                <li><a href="./Index.html">Home Page</a></li>
+                <li><a href="./Views/cv.html">Resume</a></li>
+                <li><a href="./Views/contact.html">Get in Touch</a></li>
+                <li><a href="./Views/forfun.html">Activities</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <h1 id="webname"> John Bell</h1>
+    <div class="bio-section">
+        <h2 id="greeting">Hi, my name is John</h2>
+        <img src="./Static/elvis.jpeg" alt="cat" 
+             style="width: 250px; height: 200px;"/>
+        <p id="shortBio">Hi, I'm John Bell, a web developer</p>
+        <p id="fullBio" style="display: none;">Hi, I'm John Bell, a web developer. I specialize in front-end development.</p>
+        <button id="readMore">Read More</button>
+        <button id="readLess" style="display: none;">Read Less</button>
+    </div>
+ 
+    <footer>
+        John Bell Inc. &copy; 
+        <span id="copyYear"></span>
+    </footer>
+</body>
+</html>
